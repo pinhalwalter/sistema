@@ -1,16 +1,16 @@
 import { Alert } from "react-bootstrap";
-import FormCadProdutos from "./Formularios/FormCadProduto";
+import FormCadCategorias from "./Formularios/FormCadCategoria";
 import Pagina from "../layouts/Pagina";
-export default function TelaCadastroProduto(props) {
+export default function TelaCadastroCategoria(props) {
     return (
         <div>
             <Pagina>
                 |<Alert className="mt-02 mb-02 success text-center" variant="success">
                     <h2>
-                        Cadastro de Produto
+                        Cadastro de Categoria
                     </h2>
                 </Alert>
-                <FormCadProdutos />
+                <FormCadCategorias />
             </Pagina>
         </div>
     );
