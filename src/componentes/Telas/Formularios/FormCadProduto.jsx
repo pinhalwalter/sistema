@@ -23,21 +23,15 @@ export default function FormCadProduto(props) {
         if (form.checkValidity()) {
             if (props.modoAlterar) {
                 props.setListaDeProdutos(props.listaProdutos.map((item) => {
-                    // if (item.codigo !== props.produtoSelecionado.codigo) {
-                    //     return item;
-                    // }
-                    // else {
-                    //     return props.produtoSelecionado;
-                    // }
                     return item.codigo !== props.produtoSelecionado.codigo ? item : props.produtoSelecionado;
                 }));
                 props.setModoAlterar(false);
             }
             else {
-                //cadastrar produto
+                //cadastra produto
                 props.setListaDeProdutos([...props.listaProdutos, produto]);
             }
-            // exibir a tabela com o produto incluido/alterado
+            // exibir a tabela do produto incluido/alterado
             props.setExibirTabela(true);
         }
         else {
@@ -57,7 +51,7 @@ export default function FormCadProduto(props) {
             setProduto({ ...produto, [elemento]: valor });
         }
     }
-    // "..." é um operador de espalhamento
+    // "..." => Operador de Espalhamento
 
     return (
         <Form noValidate validated={validated} onSubmit={handleSubmit}>

@@ -24,8 +24,6 @@ export default function TelaCadastroProduto(props) {
             <Alert className="text-center" variant="success">
                 <h2 className="text-center">Tela de cadastro de Produtos</h2>
             </Alert>
-            {/* operador ternário */}
-            {/*          if     return       else   return */}
             {
                 exibirTabela ? 
                 <TabelaProdutos listaProdutos={listaDeProdutos} setListaDeProdutos={setListaDeProdutos} 
