@@ -25,14 +25,14 @@ export default function TelaCadastroProduto(props) {
                 <h2 className="text-center">Tela de cadastro de Produtos</h2>
             </Alert>
             {
-                exibirTabela ? 
-                <TabelaProdutos listaProdutos={listaDeProdutos} setListaDeProdutos={setListaDeProdutos} 
-                                setExibirTabela={setExibirTabela} setModoAlterar={setModoAlterar}
-                                modoAlterar={modoAlterar} setProdutoSelecionado={setProdutoSelecionado} /> :
-                <FormCadProduto listaProdutos={listaDeProdutos} setListaDeProdutos={setListaDeProdutos}
-                                setExibirTabela={setExibirTabela} setModoAlterar={setModoAlterar}
-                                modoAlterar={modoAlterar} 
-                                setProdutoSelecionado={setProdutoSelecionado} produtoSelecionado={produtoSelecionado} />
+                exibirTabela ?
+                    <TabelaProdutos listaProdutos={listaDeProdutos} setListaDeProdutos={setListaDeProdutos}
+                        setExibirTabela={setExibirTabela} setModoAlterar={setModoAlterar}
+                        modoAlterar={modoAlterar} setProdutoSelecionado={setProdutoSelecionado} /> :
+                    <FormCadProduto listaProdutos={listaDeProdutos} setListaDeProdutos={setListaDeProdutos}
+                        setExibirTabela={setExibirTabela} setModoAlterar={setModoAlterar}
+                        modoAlterar={modoAlterar}
+                        setProdutoSelecionado={setProdutoSelecionado} produtoSelecionado={produtoSelecionado} />
             }
         </Pagina>
     );
