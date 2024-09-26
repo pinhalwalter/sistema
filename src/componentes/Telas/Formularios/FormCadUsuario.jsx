@@ -76,7 +76,7 @@ export default function FormCadUsuario(props) {
                     />
                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group as={Col} md="9">
+                <Form.Group as={Col} md="3">
                     <Form.Label>Nome</Form.Label>
                     <Form.Control
                         required
@@ -92,9 +92,7 @@ export default function FormCadUsuario(props) {
                     />
                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
-            </Row>
-            <Row className="mb-3">
-                <Form.Group as={Col} md="9">
+                <Form.Group as={Col} md="3">
                     <Form.Label>Sobrenome</Form.Label>
                     <Form.Control
                         required
@@ -110,7 +108,9 @@ export default function FormCadUsuario(props) {
                     />
                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group as={Col} md="3">
+            </Row>
+            <Row className="mb-3">
+                <Form.Group as={Col} md="6">
                     <Form.Label>Email</Form.Label>
                     <InputGroup hasValidation>
                         <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
@@ -130,9 +130,7 @@ export default function FormCadUsuario(props) {
                     </InputGroup>
                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
-            </Row>
-            <Row className="mb-3">
-                <Form.Group as={Col} md="4">
+                <Form.Group as={Col} md="3">
                     <Form.Label>Senha</Form.Label>
                     <Form.Control
                         type="text"
@@ -151,7 +149,9 @@ export default function FormCadUsuario(props) {
                         Please choose a username.
                     </Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group as={Col} md="4">
+            </Row>
+            <Row className="mb-3">
+                <Form.Group as={Col} md="3">
                     <Form.Label>Data de Nascimento</Form.Label>
                     <Form.Control
                         type="text"
